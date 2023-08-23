@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F3F1FF;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+:root {
+    --paimary-colour: #562EFF;
+}
+
+.paimary-title {
+    color: var(--paimary-colour);
+    padding: 30px 0 30px 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* header styles is here  */
+
+.header {
+    height: 80px;
+    background-color: var(--paimary-colour);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.header-part-one {
+    display: flex;
+    align-items: center;
+}
+
+.header-part-one img {
+    height: 50px;
+    width: 50px;
+    margin-right: 12px;
+}
+
+.header-part-one h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header-part-sceand ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-part-sceand li {
+    padding: 15px 30px 0;
+}
+
+.header-part-sceand a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* top player and top blog styles is here  */
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.top-player {
+    margin-top: 36px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px 30px;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+hr {
+    width: 917px;
+    color: #D1D1D1;
+    margin: 0 auto;
+}
+
+/* top blog style is here  */
+
+.top-blog {
+    padding-bottom: 30px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog {
+    display: flex;
+    margin: 0 0 13px 30px;
+}
+
+.blog-driscription {
+    padding: 0px 20px 0 10px;
+}
+
+.blog img {
+    width: 224px;
+    height: 127px;
+}
+
+.blog h3,
+.course-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.blog p {
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.blog span {
+    color: #562EFF;
+}
+
+/* lates course style is here  */
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lates-Course {
+    margin: 20px 0;
+}
+
+.course {
+    margin-left: 30px;
+}
+
+.course img {
+    width: 266px;
+    height: 141px;
+}
+
+.auther {
+    color: #ED6B4F;
+    font-size: 14.691px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.rating-time {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    align-items: flex-end;
+}
+
+.rating p {
+    color: #A2A2A2;
+    font-size: 14.691px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.emthy {
+    color: rgb(221, 220, 220);
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #FFE4E8;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+
+.time p {
+    color: #FF4A60;
+}
+
+.fa-clock {
+    color: #FF4A60;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* responsive style is here  */
+@media screen and (max-width:576px) {
+
+    .header {
+        height: 50px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 576px;
+    }
+
+    .header-part-one {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+
+    .header-part-one img {
+        margin-left: 5px;
+    }
+
+
+    .header-part-one img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .header-part-sceand li {
+        padding: 7px 0 0;
+    }
+
+    .header-part-sceand img {
+        width: 70%;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:577px) and (max-width:997px) {
+    .header-part-one {
+        margin-left: 20px;
+    }
+
+    .header-part-sceand li {
+        padding: 15px 19px 0;
+    }
+}
